@@ -71,7 +71,7 @@ public class Main {
         PilaFIFO<String> pilaFIFO = new PilaFIFO<>(6);
         
         
-        pilaFIFO.add("hola");
+        System.out.println(pilaFIFO.add("hola"));
         pilaFIFO.add("hole");
         pilaFIFO.add("holi");
         pilaFIFO.add("holo");

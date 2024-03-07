@@ -60,7 +60,10 @@ public class PilaFIFO<T> {
         StringBuilder sb = new StringBuilder();
         sb.append("PilaFIFO{");
         sb.append("tamMaximo=").append(tamMaximo);
-        sb.append(", Pila=").append(Pila);
+        for(T p : this.Pila){
+            System.out.println(p);
+            sb.append("objeto ").append(p+ "\n"); 
+        }
         sb.append('}');
         return sb.toString();
     }
@@ -86,11 +89,12 @@ public class PilaFIFO<T> {
         return tamMaximo;
     }
 
-    public void add(T t) {
+    public boolean add(T t) {
         if (this.Pila.size() < tamMaximo) {
             this.Pila.add(t);
+            return true;
         }
-
+        return false;
     }
 
     public T pop() {

@@ -64,11 +64,12 @@ public class ClasePila<T> {
         return sb.toString();
     }
 
-    public void add(T objeto) {
+    public boolean add(T objeto) {
         if (this.Pila.size() < tamMaximo) {
             this.Pila.add(objeto);
+            return true;
         }
-
+        return false;
     }
 
     public void push(T objeto) {

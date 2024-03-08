@@ -27,6 +27,7 @@ public class Main {
    
     public static void main(String[] args) {
         
+        
         ClasePila<String> pila = new ClasePila(6);
         
         pila.add("hola");
@@ -105,7 +106,7 @@ public class Main {
      
         
         System.out.println("numero maximo de elementos : " + pilaFIFO.numeroMaximo());
-        System.out.println("numero de eleentos : " + pilaFIFO.numeroElementos());
+        System.out.println("numero de elementos : " + pilaFIFO.numeroElementos());
         
         
     }
